@@ -1,0 +1,4763 @@
+header {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+navbar {
+    width:100%;
+    margin: 0 auto;
+    padding: 0;
+    position:fixed;
+    z-index: 2;
+}
+
+navcontent{
+    width:90%;
+    position: relative;
+    margin: 0 auto;
+    padding:0;
+}
+
+nav ul {
+    text-align:right;
+    margin:0;
+    padding:1.5em 0;
+    list-style: none;
+    background-color:white;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+nav li{
+    display: inline-block;
+    margin-right:40px;
+    position: relative;
+}
+
+nav ul a{
+    color:#2A3A4E;
+    transition:all ease-in-out 200ms;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size:1.2em;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+nav ul a:hover {
+    color:#5AAEF2;
+    transition: all ease-in-out 200ms;
+}
+
+.navlogo {
+    float:left;
+    padding: 1em 0;
+    z-index:7;
+    width:16em;
+    margin-left:6%;
+    transition: 250ms;
+}
+
+.navlogo path {
+  transition: 250ms;
+}
+
+.navlogo circle {
+  transition: 250ms;
+}
+
+.navlogo {
+  cursor: pointer;
+}
+
+.navlogo:hover path{
+    fill:#5AAEF2;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.navlogo:hover circle{
+    fill:#5AAEF2;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.last-tag {
+  margin-right: 6%;
+}
+
+/* Elements Home Page */
+/* Elements Home Page */
+/* Elements Home Page */
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+.spalsh-container{
+    margin: 0 auto;
+    padding: 0;
+    z-index: 100;
+    position: relative;
+}
+
+
+.splash-brand{
+    max-width:60em;
+    margin: 0 auto;
+    padding-top: 10em;
+    display: block;
+    z-index: 100;
+    position: relative;
+}
+
+.splash-slogan {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:3em;
+    color:#2A3A4E;
+    padding:0;
+    margin: 0;
+    margin-top: 0.5em;
+    display: block;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+}
+
+.splash-button-container {
+    width:70%;
+    margin: 0 auto;
+    margin-top:10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: relative;
+}
+
+.splash-button {
+    height: 2.2em;
+    min-width: 10em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size:1.8em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:3em;
+    margin-left: 2em;
+    margin-right: 2em;
+    position: relative;
+    z-index: 100;
+}
+
+.splash-button:hover {
+    background:#5AAEF2;
+    box-shadow: 0px 2px 10px #999999;
+    transform: scale(0.975);
+}
+
+.splash-background-container{
+    overflow: hidden;
+}
+
+.splash-atom-1 {
+    position:fixed;
+    overflow: hidden;
+    pointer-events: none;
+    width:100em;
+    animation: AtomRotation1 40s infinite linear;;
+}
+
+@keyframes AtomRotation1 {
+    0% {transform: translateY(-800px) translateX(-800px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(-800px) translateX(-800px) rotate(360deg);
+    transform-origin: center;}
+}
+
+.splash-atom-2 {
+    position:fixed;
+    overflow: hidden;
+    pointer-events: none;
+    width:100em;
+    animation: AtomRotation2 40s infinite linear;
+}
+
+@keyframes AtomRotation2 {
+    0% {transform: translateY(200px) translateX(1100px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(200px) translateX(1100px) rotate(360deg);
+    transform-origin: center;}
+}
+
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+
+.select-centre-text-container-mobile {
+    display: none;
+}
+
+.element-select-container {
+    width:85%;
+    margin:0 auto;
+    padding:0;
+    background-color:white;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    column-gap: 2em;
+    margin-bottom: 5em;
+}
+
+.element-select-centre{
+    width:100%;
+    margin:0;
+    padding:0;
+    bottom:0;
+}
+
+.element-select-blocks-1 {
+    grid-column:1/2;
+}
+
+.element-select-blocks-2 {
+    grid-column:3/4;
+}
+
+.element-select-centrepiece{
+    grid-column:2/3;
+}
+
+.element {
+    max-width: 13em;
+    margin: 0 auto;
+    border-radius: 1.5em;
+    text-align: center;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.element:hover {
+  transform: scale(1.02);
+  transition: 300ms;
+}
+
+/* Pseudo elements that create a responsive square */
+
+.element::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.element::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Colour for each element block */
+
+.select-oxygen {
+    background-color:#5AAEF2;
+}
+
+.select-hydrogen {
+    background-color:#DD4343;
+}
+
+.select-nitrogen {
+    background-color:#65C74C;
+}
+
+.select-carbon {
+    background-color:#854ea5;
+}
+
+.select-calcium {
+    background-color:#F4A721;
+}
+
+.select-phosphorus {
+    background-color:#E0417A;
+}
+
+.element-top {
+    margin-top: 6em;
+}
+
+.select-chemical-symbol{
+    font-family: 'Nunito', sans-serif;
+    font-weight:800;
+    color:white;
+    font-size:3em;
+    margin:0;
+    padding:0;
+}
+
+.select-element-name{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:white;
+    font-size:1.6em;
+    margin:0;
+    padding:0;
+}
+
+.select-atomic-number{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    color:white;
+    font-size:1.3em;
+    margin:0;
+    padding:0;
+    padding-top:1em;
+}
+
+.select-atomic-mass{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:white;
+    font-size:1.3em;
+    margin:0;
+    padding:0;
+    padding-top: 0.4em;
+    padding-bottom:1em;
+}
+
+.select-person-model {
+    max-width:25em;
+    margin:0 auto;
+    display: block;
+    transition: ease-in-out 350ms;
+}
+
+.precent-rect {
+    height:1.5%;
+    width:100%;
+    transition: ease-in-out 400ms;
+}
+
+.element-select-centre{
+    width:100%;
+    margin:0;
+    padding:0;
+    bottom:0;
+}
+
+.select-centre-text-container {
+    font-family: 'Nunito', sans-serif;
+    margin:0 auto;
+    padding: 0;
+    display: block;
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
+.select-title{
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    color:#1A2633;
+}
+
+.select-subtitle{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    color:#1A2633;
+}
+
+.select-element-precent-text {
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    margin-top: 1em;
+    color:#2A3A4E;
+    transition: ease-in-out 400ms;
+}
+
+.footer {
+position: relative;
+display: block;
+}
+
+.mediasection {
+    background-color:white;
+    display: block;
+    padding:0;
+    margin: 0;
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: 'Nunito', sans-serif;
+    color:#2A3A4E;
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mediaicon{
+    width:1.75em;
+    transition: 250ms;
+    margin: 0 2em;
+}
+
+.mediarow {
+    display:flex;
+    position: relative;
+    margin: 0 auto;
+    padding:0;
+    width:70%;
+    margin-top:0em;
+    justify-content: center;
+}
+
+.mediatitle {
+    width:70%;
+    font-size: 1.5em;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.mediaicon:hover {
+    transition: 250ms;
+}
+
+.mediaicon:hover path{
+    fill:#5AAEF2;
+    transition: 250ms
+}
+
+.mediaicon:hover circle{
+    fill:#5AAEF2;
+    transition: 250ms
+}
+
+.mediaicon path{
+    transition: 250ms
+}
+
+.mediaicon circle{
+    transition: 250ms
+}
+
+.iconlink{
+    margin-top: 1em;
+}
+
+
+h5 {
+    font-size:0.8em;
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    display: grid;
+    margin:0;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.pinkfy a:hover {
+  color:#E0417A;
+  fill:#E0417A;
+}
+
+.pinkfy:hover path {
+  fill:#E0417A;
+}
+
+.pinkfy:hover circle{
+  fill:#E0417A;
+}
+
+.yellowfy a:hover {
+  color:#F4A721;
+  fill:#F4A721;
+}
+
+.yellowfy:hover path {
+  fill:#F4A721;
+}
+
+.yellowfy:hover circle{
+  fill:#F4A721;
+}
+
+.redfy a:hover {
+  color:#DD4343;
+  fill:#DD4343;
+}
+
+.redfy:hover path {
+  fill:#DD4343;
+}
+
+.redfy:hover circle{
+  fill:#DD4343;
+}
+
+.purplefy a:hover {
+  color:#854ea5;
+  fill:#854ea5;
+}
+
+.purplefy:hover path {
+  fill:#854ea5;
+}
+
+.purplefy:hover circle{
+  fill:#854ea5;
+}
+
+.greenfy a:hover {
+  color:#65C74C;
+  fill:#65C74C;
+}
+
+.greenfy:hover path {
+  fill:#65C74C;
+}
+
+.greenfy:hover circle{
+  fill:#65C74C;
+}
+
+
+
+.left-side-container::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.left-side-container::-webkit-scrollbar-track {
+    background-color: #eee
+}
+
+.left-side-container::-webkit-scrollbar-thumb {
+  background-color:#ddd;
+}
+
+.left-side-container::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc;
+}
+
+
+
+.element-page-container{
+  display: block;
+  width:100%;
+}
+
+.element-container {
+  width:100%;
+  height:auto;
+  margin:0;
+  padding:0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-side-container{
+  background-color:white;
+  grid-column:1/2;
+  display: block;
+  overflow:scroll;
+  overflow-x: hidden;
+  padding-top: 0em;
+}
+
+.last-fact {
+  padding-bottom: 4em;
+}
+
+.left-side-content {
+  background-color:white;
+  margin:0 auto;
+  width:80%;
+  height:100vh;
+  padding-top: 2em;
+  display: block;
+}
+
+.right-side-container {
+  background-color:#E0417A;
+  grid-column:2/3;
+  overflow: hidden;
+}
+
+.calcium-right {
+  background-color:#f4a721;
+}
+
+.carbon-right {
+  background-color:#854ea5;
+}
+
+.oxygen-right {
+  background-color:#5AAEF2;
+}
+
+.nitrogen-right {
+  background-color:#65C74C;
+}
+
+.hydrogen-right {
+  background-color:#DD4343;
+}
+
+.right-side-hello {
+  margin:0 auto;
+  font-size: 2.25em;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+  color:white;
+  margin-top: 3.5em;
+  font-family: 'Nunito', sans-serif;
+}
+
+.right-side-subtitle {
+  margin:0 auto;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+  padding:0;
+  width:85%;
+  color:white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.atom-small {
+  display: none;
+}
+
+.atom-model {
+  width:35em;
+  display: block;
+  margin: 0 auto;
+  margin-top:2em;
+  overflow: hidden;
+}
+
+.n-atom {
+  width:35em;
+  display: block;
+  margin: 0 auto;
+  margin-top:2em;
+  overflow: hidden;
+  transform-origin: center;
+}
+
+.h-atom {
+  width:35em;
+  display: block;
+  margin: 0 auto;
+  margin-top:2em;
+  overflow: hidden;
+  transform-origin: center;
+}
+
+.ca-atom {
+  width:35em;
+  display: block;
+  margin: 0 auto;
+  margin-top:2em;
+  overflow: hidden;
+}
+
+.c-atom {
+  width:35em;
+  display: block;
+  margin: 0 auto;
+  margin-top:2em;
+  overflow: hidden;
+}
+
+.o-atom {
+  width:35em;
+  display: block;
+  margin: 0 auto;
+  margin-top:2em;
+  overflow: hidden;
+}
+
+.h-atom-ring {
+  animation: p-atom-rotate 12s infinite linear;
+  transform-origin:center;
+}
+
+.c-atom-inner-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.c-atom-outer-ring {
+  animation: p-atom-rotate 11s infinite linear;
+  transform-origin:center;
+}
+
+.o-atom-inner-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.o-atom-outer-ring {
+  animation: p-atom-rotate 11s infinite linear;
+  transform-origin:center;
+}
+
+.n-atom-inner-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.n-atom-outer-ring {
+  animation: p-atom-rotate 11s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-inner-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-middle-ring {
+  animation: p-atom-rotate 12s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-outer-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.ca-atom-inner-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.ca-atom-inner-middle-ring {
+  animation: p-atom-rotate 12s infinite linear;
+  transform-origin:center;
+}
+
+.ca-atom-outer-middle-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.ca-atom-outer-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+@keyframes p-atom-rotate {
+
+0% {
+  transform: rotate(0deg);
+}
+
+100% {
+  transform: rotate(360deg);
+}
+
+}
+
+.element-page {
+  max-width: 13em;
+  margin: 0 auto;
+  border-radius: 1.5em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  transition: 300ms;
+}
+
+/* Pseudo elements that create a responsive square */
+
+.element-page::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.element-page::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-page-top-info {
+    font-family: 'Nunito', sans-serif;
+    margin:0 auto;
+    display: block;
+    padding:0;
+    color:#2A3A4E;
+}
+
+.element-page-title {
+  margin:0 auto;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+}
+
+.element-pronounce {
+  margin:0 auto;
+  text-align: center;
+  font-size:1.25em;
+  font-weight: 500;
+  padding:0;
+}
+
+.element-page-precent {
+  margin:0 auto;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+  font-size: 1.5em;
+}
+
+.element-page-gen-info {
+    width:90%;
+    margin:0 auto;
+    display: block;
+    margin-top: 4em;
+    color:#2A3A4E;
+}
+
+.gen-info-item {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.5em;
+  padding:0;
+}
+
+.gen-info-item-span{
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 500;
+  padding:0;
+  float:right;
+}
+
+.element-page-para-info {
+  width:90%;
+  padding:0;
+  margin:0 auto;
+  display: block;
+  margin-top:4em;
+  font-family: 'Nunito', sans-serif;
+  display: block;
+  margin-bottom: 4em;
+  color:#2A3A4E;
+}
+
+.element-page-para-photo{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+  border-radius: 1em;
+}
+
+.element-page-para-photo img{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+    border-radius: 1em;
+}
+
+.element-para-title {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.5em;
+  padding:0;
+}
+
+.element-page-para-text {
+  margin-top:1em;
+  margin-bottom: 4em;
+}
+
+.element-para {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 500;
+  font-size: 1.15em;
+  padding:0;
+  margin-top:1em;
+}
+
+.element-page-facts {
+  width:90%;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4em;
+  margin-bottom: 4em;
+  color:#2A3A4E;
+}
+
+.element-page-fact-1 {
+  grid-column:1/2;
+  margin-bottom: 4em;
+}
+
+.element-page-fact-2 {
+  grid-column:2/3;
+  margin-bottom: 4em;
+}
+
+.element-page-fact-photo {
+  width:100%;
+  margin:0 auto;
+  display: block;
+}
+
+.element-page-fact-photo img {
+  width:5em;
+  margin:0 auto;
+  display: block;
+}
+
+.fact-title {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 2em;
+  padding:0;
+  margin-bottom: 1em;
+  grid-column: 1/3
+}
+
+.element-fact-para{
+font-family: 'Nunito', sans-serif;
+margin:0 auto;
+display: block;
+font-weight: 500;
+font-size: 1.15em;
+padding:0;
+margin-top:2em;}
+
+.element-select-chemical-symbol{
+    font-family: 'Nunito', sans-serif;
+    font-weight:800;
+    color:white;
+    font-size:3em;
+    margin:0;
+    padding:0;
+}
+
+.element-select-element-name{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:white;
+    font-size:1.6em;
+    margin:0;
+    padding:0;
+}
+
+.element-select-atomic-number{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    color:white;
+    font-size:1.3em;
+    margin:0;
+    padding:0;
+    padding-top:1em;
+}
+
+.element-select-atomic-mass{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:white;
+    font-size:1.3em;
+    margin:0;
+    padding:0;
+    padding-top: 0.4em;
+    padding-bottom:1em;
+}
+
+
+
+.lh-wrapper {
+  margin:0 auto;
+  padding: 0;
+  width:100%;
+  display: block;
+  min-height: 100vh;
+}
+
+.lh-container {
+  max-width:65em;
+  margin:0 auto;
+  padding:0;
+}
+
+.lh-introduction {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  padding:0;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.lh-intro-title {
+  font-weight: 900;
+  margin:0 auto;
+  padding:0;
+  font-size: 3em;
+  color:#5aaef2;
+}
+
+.lh-intro-para {
+  font-weight: 700;
+  font-size:2em;
+  margin:0 auto;
+  padding:0;
+  color:#2A3A4E;
+}
+
+.lh-50-50 {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  padding:0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4em;
+  margin-bottom: 4em;
+}
+
+.lh-50-50-image-60em {
+  display: none;
+}
+
+.lh-50-50-text-left {
+  grid-column: 1/2;
+}
+
+.lh-50-50-title {
+  margin:0;
+  padding: 0;
+  color:#2A3A4E;
+}
+
+.lh-50-50-para {
+  font-weight: 500;
+  font-size: 1.15em;
+  margin:0;
+  padding:0;
+  color:#131d28;
+  margin-top: 1em;
+}
+
+.lh-50-50-text-right {
+  grid-column: 2/3;
+}
+
+.lh-50-50-image {
+  width:100%;
+  border-radius: 1em;
+}
+
+.lh-50-50-image img{
+  width:100%;
+}
+
+.lh-50-50-image-right {
+  grid-column: 2/3;
+}
+
+.lh-3col-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4em;
+  margin-bottom: 4em;
+  font-family: 'Nunito', sans-serif;
+}
+
+.col-image {
+  width:50%;
+  margin:0 auto;
+  display: block;
+}
+
+.lh-3col-title {
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.15em;
+  color:#2A3A4E;
+}
+
+.lh-3col-para{
+  margin: 0 auto;
+  font-size: 1.15em;
+  color:#131d28;
+  font-family: 'Nunito', sans-serif;
+}
+
+.col-image img{
+  width:100%;
+}
+
+.col1-image-container {
+  grid-column: 1/2;
+  margin-bottom: 1em;
+}
+
+.col1-container {
+  grid-column: 1/2
+}
+
+
+.col2-image-container {
+  grid-column: 2/3;
+  margin-bottom: 1em;
+}
+
+.col2-container {
+  grid-column: 2/3;
+}
+
+.col3-image-container {
+  grid-column: 3/4;
+  margin-bottom: 1em;
+}
+
+.col3-container {
+  grid-column: 3/4;
+}
+
+
+.lh-periodic-table-image {
+  width:100%;
+  transition: 300ms;
+}
+
+.lh-periodic-table-image img {
+  width:100%;
+  transition: 300ms;
+}
+
+.lh-periodic-table-para {
+  margin: 0 auto;
+  font-size: 1.15em;
+  color:#131d28;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  transition: 300ms;
+  width:80%;
+  height:3em;;
+}
+
+.lh-periodic-table-title {
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.15em;
+  color:#2A3A4E;
+}
+
+.periodic-table-button-container {
+    width:100%;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    margin: 0 auto;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.periodic-table-button {
+    height: 2.2em;
+    min-width:8em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-size:1.5em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:50em;
+    margin-left: 2em;
+    margin-right: 2em;
+    position: relative;
+    z-index: 100;
+}
+
+.periodic-table-button:hover {
+    background:#5aaef2;;
+    transform: scale(0.98);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+.periodic-table-button:focus {
+    background:#5aaef2;
+    outline:none;
+    transform: scale(0.98);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+.periodic-table-button:active {
+    background:#5aaef2;
+    outline:none;
+    transform: scale(0.95);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+.learning-material-button-container {
+    width:100%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    bottom:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.learning-material-button {
+    height: 2.2em;
+    min-width:12em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-size:1.5em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:50em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    z-index: 100;
+}
+
+.learning-material-button:hover {
+    background:#5aaef2;;
+    transform: scale(0.98);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+.learning-material-button:focus {
+    background:#5aaef2;
+    outline:none;
+    transform: scale(0.98);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.p-block {
+  transition: 300ms;
+}
+
+.s-block {
+  transition: 300ms;
+}
+
+.d-block {
+  transition: 300ms;
+}
+
+.p-block.blocktoggle {
+  fill:#5aaef2;
+  transition: 300ms;
+}
+
+.s-block.blocktoggle{
+  fill:#65c74c;
+  transition: 300ms;
+}
+
+.d-block.blocktoggle{
+  fill:#dd4343;
+  transition: 300ms;
+}
+
+.group-1 {
+  transition: 300ms;
+}
+
+.group-2 {
+  transition: 300ms;
+}
+
+.group-3{
+  transition: 300ms;
+}
+
+.group-4 {
+  transition: 300ms;
+}
+
+.group-5 {
+  transition: 300ms;
+}
+
+.group-6{
+  transition: 300ms;
+}
+
+.group-7{
+  transition: 300ms;
+}
+
+.group-8 {
+  transition: 300ms;
+}
+
+.group-9{
+  transition: 300ms;
+}
+
+.group-10 {
+  transition: 300ms;
+}
+
+.group-11{
+  transition: 300ms;
+}
+
+.group-12{
+  transition: 300ms;
+}
+
+.group-13{
+  transition: 300ms;
+}
+
+.group-14 {
+  transition: 300ms;
+}
+
+.group-15{
+  transition: 300ms;
+}
+
+.group-16 {
+  transition: 300ms;
+}
+
+.group-17{
+  transition: 300ms;
+}
+
+.group-18{
+  transition: 300ms;
+}
+
+.group-1.grouptoggle {
+  fill:#f784b3;
+  transition: 300ms;
+}
+
+.group-2.grouptoggle{
+  fill:#e0417a;
+  transition: 300ms;
+}
+
+.group-3.grouptoggle{
+  fill:#892962;
+  transition: 300ms;
+}
+
+.group-4.grouptoggle {
+  fill:#93e27d;
+  transition: 300ms;
+}
+
+.group-5.grouptoggle{
+  fill:#65c74c;
+  transition: 300ms;
+}
+
+.group-6.grouptoggle{
+  fill:#379351;
+  transition: 300ms;
+}
+
+.group-7.grouptoggle {
+  fill:#b390d1;
+  transition: 300ms;
+}
+
+.group-8.grouptoggle{
+  fill:#854ea5;
+  transition: 300ms;
+}
+
+.group-9.grouptoggle{
+  fill:#5b3677;
+  transition: 300ms;
+}
+
+.group-10.grouptoggle {
+  fill:#ffc55f;
+  transition: 300ms;
+}
+
+.group-11.grouptoggle{
+  fill:#f4a721;
+  transition: 300ms;
+}
+
+.group-12.grouptoggle{
+  fill:#f28a22;
+  transition: 300ms;
+}
+
+.group-13.grouptoggle{
+  fill:#8bcdea;
+  transition: 300ms;
+}
+
+.group-14.grouptoggle {
+  fill:#5aaef2;
+  transition: 300ms;
+}
+
+.group-15.grouptoggle{
+  fill:#248dd3;
+  transition: 300ms;
+}
+
+.group-16.grouptoggle{
+  fill:#f45d5d;
+  transition: 300ms;
+}
+
+.group-17.grouptoggle {
+  fill:#dd4343;
+  transition: 300ms;
+}
+
+.group-18.grouptoggle{
+  fill:#c12d2d;
+  transition: 300ms;
+}
+
+.period-1 {
+  transition: 300ms;
+}
+
+.period-2 {
+  transition: 300ms;
+}
+
+.period-3{
+  transition: 300ms;
+}
+
+.period-4 {
+  transition: 300ms;
+}
+
+.period-5 {
+  transition: 300ms;
+}
+
+.period-6{
+  transition: 300ms;
+}
+
+.period-7{
+  transition: 300ms;
+}
+
+.period-1.periodtoggle {
+  fill:#e0417a;
+  transition: 300ms;
+}
+
+.period-2.periodtoggle{
+  fill:#5aaef2;
+  transition: 300ms;
+}
+
+.period-3.periodtoggle{
+  fill:#dd4343;
+  transition: 300ms;
+}
+
+.period-4.periodtoggle {
+  fill:#f4a721;
+  transition: 300ms;
+}
+
+.period-5.periodtoggle{
+  fill:#854ea5;
+  transition: 300ms;
+}
+
+.period-6.periodtoggle{
+  fill:#65c74c;
+  transition: 300ms;
+}
+
+.period-7.periodtoggle {
+  fill:#4e62c4;
+  transition: 300ms;
+}
+
+
+
+@media (max-width:90em){
+
+/* Elements Home Page */
+
+.splash-atom-2 {
+    width:75em;
+}
+
+.splash-atom-1 {
+    width:75em;
+}
+
+    @keyframes AtomRotation1 {
+    0% {transform: translateY(-600px) translateX(-600px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(-600px) translateX(-600px) rotate(360deg);
+    transform-origin: center;}
+}
+
+    @keyframes AtomRotation2 {
+    0% {transform: translateY(100px) translateX(800px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(100px) translateX(800px) rotate(360deg);
+    transform-origin: center;}
+}
+
+.splash-brand{
+    padding-top: 6em;
+    max-width:50em;
+}
+
+.splash-button-container {
+    margin-top:5em;
+}
+
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+
+.element-select-container {
+    width:85%;
+    margin:0 auto;
+    padding:0;
+    background-color:white;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    column-gap: 2em;
+}
+
+.element-select-centre{
+    width:100%;
+    margin:0;
+    padding:0;
+    bottom:0;
+}
+
+.element-select-blocks-1 {
+    grid-column:1/2;
+}
+
+.element-select-blocks-2 {
+    grid-column:3/4;
+}
+
+.element-select-centrepiece{
+    grid-column:2/3;
+}
+
+.element {
+    max-width: 10em;
+    margin: 0 auto;
+    border-radius: 1.5em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Pseudo elements that create a responsive square */
+
+.element::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.element::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-top {
+    margin-top: 3em;
+}
+
+.select-chemical-symbol{
+    font-size:2em;
+    margin:0;
+    padding:0;
+    margin-top: 0.2em;
+}
+
+.select-element-name{
+    font-size:1.4em;
+    margin:0;
+    padding:0;
+    margin-bottom: 0.25em;
+}
+
+.select-atomic-number{
+    font-size:1.1em;
+    margin:0;
+    padding:0;
+    padding-top:0.8em;
+}
+
+.select-atomic-mass{
+    font-size:1.1em;
+    margin:0;
+    padding:0;
+    padding-top: 0em;
+    padding-bottom:0.8em;
+}
+
+.select-person-model {
+    max-width:20em;
+    margin:0 auto;
+    display: block;
+}
+
+
+.element-select-container {
+    width:85%;
+    margin:0 auto;
+    padding:0;
+    background-color:white;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    column-gap: 2em;
+    bottom:0;
+    margin-bottom: 2em;
+}
+
+.element-select-centre{
+    width:100%;
+    min-height: 100%;
+    margin:0;
+    padding:0;
+    bottom:0;
+    margin-bottom: 0em;
+}
+
+.select-centre-text-container {
+    margin:0 auto;
+    padding: 0;
+    display: block;
+    margin-top: 3em;
+}
+
+.select-title{
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.select-subtitle{
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.select-element-precent-text {
+    font-size: 1.5em;
+    font-weight: 700;
+    display: block;
+    margin:0 auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+
+
+
+
+
+.left-side-container::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.left-side-container::-webkit-scrollbar-track {
+    background-color: #eee
+}
+
+.left-side-container::-webkit-scrollbar-thumb {
+  background-color:#ddd;
+}
+
+.left-side-container::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc;
+}
+
+
+
+
+
+.element-container {
+  width:100%;
+  height:95vh;
+  margin:0;
+  padding:0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-side-container{
+  background-color:white;
+  grid-column:1/2;
+  display: block;
+  overflow:scroll;
+  overflow-x: hidden;
+  padding-top: 0em;
+}
+
+.left-side-content {
+  background-color:white;
+  margin:0 auto;
+  width:80%;
+  height:100vh;
+  padding-top: 2em;
+  display: block;
+}
+
+.right-side-container {
+  grid-column:2/3;
+  overflow: hidden;
+}
+
+.right-side-hello {
+  margin:0 auto;
+  font-size: 2.25em;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+  color:white;
+  margin-top: 1.5em;
+  font-family: 'Nunito', sans-serif;
+}
+
+.right-side-subtitle {
+  margin:0 auto;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+  padding:0;
+  color:white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.atom-model {
+  width:30em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.p-atom-inner-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-middle-ring {
+  animation: p-atom-rotate 12s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-outer-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+@keyframes p-atom-rotate {
+
+0% {
+  transform: rotate(0deg);
+}
+
+100% {
+  transform: rotate(360deg);
+}
+
+}
+
+.element-page {
+  max-width: 13em;
+  margin: 0 auto;
+  border-radius: 1.5em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  transition: 300ms;
+}
+
+/* Pseudo elements that create a responsive square */
+
+.element-page::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.element-page::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-page-top-info {
+    font-family: 'Nunito', sans-serif;
+    margin:0 auto;
+    display: block;
+    padding:0;
+    color:#2A3A4E;
+}
+
+.element-page-title {
+  margin:0 auto;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+}
+
+.element-pronounce {
+  margin:0 auto;
+  text-align: center;
+  font-size:1.25em;
+  font-weight: 500;
+  padding:0;
+}
+
+.element-page-precent {
+  margin:0 auto;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+  font-size: 1.5em;
+}
+
+.element-page-gen-info {
+    width:90%;
+    margin:0 auto;
+    display: block;
+    margin-top: 4em;
+    color:#2A3A4E;
+}
+
+.gen-info-item {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.35em;
+  padding:0;
+}
+
+.gen-info-item-span{
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 500;
+  padding:0;
+  float:right;
+}
+
+.element-page-para-info {
+  width:90%;
+  padding:0;
+  margin:0 auto;
+  display: block;
+  margin-top:4em;
+  font-family: 'Nunito', sans-serif;
+  display: block;
+  margin-bottom: 4em;
+  color:#2A3A4E;
+}
+
+.element-page-para-photo{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+
+.element-page-para-photo img{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+
+.element-para-title {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.5em;
+  padding:0;
+}
+
+.element-page-para-text {
+  margin-top:1em;
+  margin-bottom: 4em;
+}
+
+.element-para {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 500;
+  font-size: 1.15em;
+  padding:0;
+  margin-top:1em;
+}
+
+.element-page-facts {
+  width:90%;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3em;
+  margin-bottom: 4em;
+  color:#2A3A4E;
+}
+
+.element-page-fact-1 {
+  grid-column:1/2;
+  margin-bottom: 4em;
+}
+
+.element-page-fact-2 {
+  grid-column:2/3;
+  margin-bottom: 4em;
+}
+
+.element-page-fact-photo {
+  width:100%;
+  margin:0 auto;
+  display: block;
+}
+
+.element-page-fact-photo img {
+  width:5em;
+  margin:0 auto;
+  display: block;
+}
+
+.fact-title {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 2em;
+  padding:0;
+  margin-bottom: 1em;
+  grid-column: 1/3
+}
+
+.element-fact-para{
+font-family: 'Nunito', sans-serif;
+margin:0 auto;
+display: block;
+font-weight: 500;
+font-size: 1.15em;
+padding:0;
+margin-top:1em;
+}
+
+
+.lh-container {
+  max-width:65em;
+}
+
+.lh-introduction {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.lh-intro-title {
+  font-size: 3em;
+  color:#5aaef2;
+}
+
+.lh-intro-para {
+  font-size:2em;
+}
+
+.lh-50-50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4em;
+  margin-bottom: 4em;
+}
+
+.lh-50-50-text-left {
+  grid-column: 1/2;
+}
+
+.lh-50-50-title {
+  font-size:2em;
+}
+
+.lh-50-50-para {
+  font-size: 1.15em;
+  margin-top: 1em;
+}
+
+.lh-50-50-text-right {
+  grid-column: 2/3;
+}
+
+.lh-50-50-image {
+  width:100%;
+  border-radius: 1em;
+}
+
+.lh-50-50-image img{
+  width:100%;
+}
+
+.lh-50-50-image-right {
+  grid-column: 2/3;
+}
+
+.lh-3col-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4em;
+  margin-bottom: 4em;
+}
+
+.col-image {
+  width:50%;
+  margin:0 auto;
+  display: block;
+}
+
+.lh-3col-title {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.15em;
+}
+
+.lh-3col-para{
+  margin: 0 auto;
+  font-size: 1.15em;
+}
+
+.col-image img{
+  width:100%;
+}
+
+.col1-image-container {
+  grid-column: 1/2;
+  margin-bottom: 1em;
+}
+
+.col1-container {
+  grid-column: 1/2
+}
+
+.col2-image-container {
+  grid-column: 2/3;
+  margin-bottom: 1em;
+}
+
+.col2-container {
+  grid-column: 2/3;
+}
+
+.col3-image-container {
+  grid-column: 3/4;
+  margin-bottom: 1em;
+}
+
+.col3-container {
+  grid-column: 3/4;
+}
+
+.lh-periodic-table-para {
+  margin: 0 auto;
+  font-size: 1.15em;
+  text-align: center;
+  transition: 300ms;
+  width:80%;
+  height:3em;;
+}
+
+.lh-periodic-table-title {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.15em;
+}
+
+.periodic-table-button-container {
+    width:100%;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    margin: 0 auto;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.periodic-table-button {
+    height: 2.2em;
+    min-width:8em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-size:1.5em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:50em;
+    margin-left: 2em;
+    margin-right: 2em;
+    position: relative;
+    z-index: 100;
+}
+
+.learning-material-button-container {
+    width:100%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    bottom:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.learning-material-button {
+    height: 2.2em;
+    min-width:12em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-size:1.5em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:50em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+}
+
+
+@media (max-width:70em){
+
+  nav ul {
+      text-align:right;
+      margin:0;
+      padding:1.5em 0;
+      list-style: none;
+      background-color:white;
+  }
+
+  nav li{
+      display: inline-block;
+      margin-right:20px;
+      position: relative;
+  }
+
+  nav a{
+      color:#2A3A4E;
+      transition:all ease-in-out 200ms;
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-size:1.2em;
+      text-transform: uppercase;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-style: normal;
+  }
+
+  .navlogo {
+    margin-left:5%;
+  }
+
+  .last-tag {
+    margin-right:5%;
+  }
+
+/* Elements Home Page */
+
+.splash-atom-2 {
+    width:60em;
+}
+
+.splash-atom-1 {
+    width:60em;
+}
+
+    @keyframes AtomRotation1 {
+    0% {transform: translateY(-450px) translateX(-475px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(-450px) translateX(-475px) rotate(360deg);
+    transform-origin: center;}
+}
+
+    @keyframes AtomRotation2 {
+    0% {transform: translateY(200px) translateX(600px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(200px) translateX(600px) rotate(360deg);
+    transform-origin: center;}
+}
+
+.splash-brand{
+    max-width:45em;
+    padding-top: 6em;
+}
+
+.splash-button-container {
+    margin-top:8em;
+}
+
+.splash-slogan {
+    font-size:2.5em;
+    color:#2A3A4E;
+    padding:0;
+    margin: 0;
+    margin-top: 0.5em;
+    display: block;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+}
+
+.splash-button {
+    font-size:1.5em;
+}
+
+
+
+
+
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+
+.element-select-centre{
+    width:100%;
+    margin:0;
+    padding:0;
+    bottom:0;
+}
+
+.element-select-blocks-1 {
+    grid-column:1/2;
+}
+
+.element-select-blocks-2 {
+    grid-column:3/4;
+}
+
+.element-select-centrepiece{
+    grid-column:2/3;
+}
+
+.element {
+    max-width: 9em;
+    margin: 0 auto;
+    border-radius: 1.5em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Pseudo elements that create a responsive square */
+
+.element::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.element::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-top {
+    margin-top: 4em;
+}
+
+.select-chemical-symbol{
+    font-size:1.8em;
+    margin:0;
+    padding:0;
+    margin-top:0em;
+}
+
+.select-element-name{
+    font-size:1.2em;
+    margin:0;
+    padding:0;
+    margin-bottom:0em;
+}
+
+.select-atomic-number{
+    font-size:1em;
+    margin:0;
+    padding:0;
+    padding-top:0.6em;
+}
+
+.select-atomic-mass{
+    font-size:1em;
+    margin:0;
+    padding:0;
+    margin-top: 0.5em;
+    padding-bottom:0.6em;
+}
+
+.select-person-model {
+    max-width:20em;
+    margin:0 auto;
+    display: block;
+}
+
+
+.element-select-container {
+    width:95%;
+    margin:0 auto;
+    padding:0;
+    background-color:white;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    column-gap:0em;
+    bottom:0;
+    margin-bottom:5em;
+}
+
+.element-select-centre{
+    width:100%;
+    display: block;
+    margin:0 auto;
+    padding:0;
+    bottom:0;
+}
+
+.select-centre-text-container {
+    margin:0 auto;
+    padding: 0;
+    display: block;
+    margin-top: 4em;
+}
+
+.select-title{
+    font-size: 2.25em;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.select-subtitle{
+    font-size: 1.15em;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.select-element-precent-text {
+    font-size: 1.4em;
+    font-weight: 700;
+    display: block;
+    margin:0 auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.select-person-model {
+    max-width:18em;
+    margin:0 auto;
+    display: block;
+}
+
+
+.mediasection {
+    background-color:white;
+    display: block;
+    padding:0;
+    margin: 0;
+    width:100%;
+    position:relative;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: 'Nunito', sans-serif;
+    color:#2A3A4E;
+}
+
+.mediaicon{
+    width:1.75em;
+    transition: 250ms;
+    margin: 0 2em;
+}
+
+.mediarow {
+    display:flex;
+    position: relative;
+    margin: 0 auto;
+    padding:0;
+    width:70%;
+    margin-top:0em;
+    justify-content: center;
+}
+
+.mediatitle {
+    width:70%;
+    font-size: 1.5em;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.iconlink{
+    margin-top: 1em;
+}
+
+
+h5 {
+    font-size:0.8em;
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    display: grid;
+    margin:0;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.element-container {
+  width:100%;
+  height:95vh;
+  margin:0;
+  padding:0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-side-container{
+  background-color:white;
+  grid-column:1/2;
+  display: block;
+  overflow:scroll;
+  overflow-x: hidden;
+  padding-top: 0em;
+}
+
+.left-side-content {
+  margin:0 auto;
+  width:80%;
+  height:100vh;
+  padding-top: 2em;
+  display: block;
+}
+
+.right-side-container {
+  grid-column:2/3;
+  overflow: hidden;
+}
+
+.right-side-hello {
+  margin:0 auto;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+  color:white;
+  margin-top: 2em;
+  font-family: 'Nunito', sans-serif;
+}
+
+.right-side-subtitle {
+  margin:0 auto;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 600;
+  padding:0;
+  width:85%;
+  color:white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.atom-model {
+  width:25em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  overflow: hidden;
+}
+
+.p-atom-inner-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-middle-ring {
+  animation: p-atom-rotate 12s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-outer-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+@keyframes p-atom-rotate {
+
+0% {
+  transform: rotate(0deg);
+}
+
+100% {
+  transform: rotate(360deg);
+}
+
+}
+
+.element-page {
+  max-width: 10em;
+  margin: 0 auto;
+  border-radius: 1.5em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  transition: 300ms;
+}
+
+/* Pseudo elements that create a responsive square */
+
+.element-page::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.element-page::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-page-top-info {
+    font-family: 'Nunito', sans-serif;
+    margin:0 auto;
+    display: block;
+    padding:0;
+    color:#2A3A4E;
+}
+
+.element-page-title {
+  margin:0 auto;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+}
+
+.element-pronounce {
+  margin:0 auto;
+  text-align: center;
+  font-size:1.25em;
+  font-weight: 500;
+  padding:0;
+}
+
+.element-page-precent {
+  margin:0 auto;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+  font-size: 1.5em;
+}
+
+.element-page-gen-info {
+    width:100%;
+    margin:0 auto;
+    display: block;
+    margin-top: 4em;
+    color:#2A3A4E;
+}
+
+.gen-info-item {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.25em;
+  padding:0;
+}
+
+.gen-info-item-span{
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 500;
+  padding:0;
+}
+
+.element-page-para-info {
+  width:100%;
+  padding:0;
+  margin:0 auto;
+  display: block;
+  margin-top:4em;
+  font-family: 'Nunito', sans-serif;
+  display: block;
+  margin-bottom: 4em;
+  color:#2A3A4E;
+}
+
+.element-page-para-photo{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+
+.element-page-para-photo img{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+
+.element-para-title {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.5em;
+  padding:0;
+}
+
+.element-page-para-text {
+  margin-top:1em;
+  margin-bottom: 2em;
+}
+
+.element-para {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 500;
+  font-size: 1em;
+  padding:0;
+  margin-top:1em;
+}
+
+.element-page-facts {
+  width:100%;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3em;
+  margin-bottom: 4em;
+  color:#2A3A4E;
+}
+
+.element-page-fact-1 {
+  grid-column:1/3;
+  margin-bottom: 2em;
+}
+
+.element-page-fact-2 {
+  grid-column:1/3;
+  margin-bottom: 2em;
+}
+
+.element-page-fact-photo {
+  width:100%;
+  margin:0 auto;
+  display: block;
+}
+
+.element-page-fact-photo img {
+  width:5em;
+  margin:0 auto;
+  display: block;
+}
+
+.fact-title {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 2em;
+  padding:0;
+  margin-bottom: 1em;
+  grid-column: 1/3
+}
+
+.element-fact-para{
+font-family: 'Nunito', sans-serif;
+margin:0 auto;
+display: block;
+font-weight: 500;
+font-size: 1em;
+padding:0;
+margin-top:1em;}
+
+
+.element-fact-para{
+font-family: 'Nunito', sans-serif;
+margin:0 auto;
+display: block;
+font-weight: 500;
+font-size: 1.15em;
+padding:0;
+margin-top:1em;}
+
+.element-select-chemical-symbol{
+    font-family: 'Nunito', sans-serif;
+    font-weight:800;
+    color:white;
+    font-size:2.5em;
+    margin:0;
+    padding:0;
+}
+
+.element-select-element-name{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:white;
+    font-size:1.3em;
+    margin:0;
+    padding:0;
+}
+
+.element-select-atomic-number{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    color:white;
+    font-size:1em;
+    margin:0;
+    padding:0;
+    padding-top:1em;
+}
+
+.element-select-atomic-mass{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:white;
+    font-size:1em;
+    margin:0;
+    padding:0;
+    padding-top: 0.4em;
+    padding-bottom:1em;
+}
+
+
+.lh-container {
+  width:80%;
+}
+
+.lh-introduction {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.lh-intro-title {
+  font-size: 3em;
+  color:#5aaef2;
+}
+
+.lh-intro-para {
+  font-size:2em;
+}
+
+.lh-50-50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4em;
+  margin-bottom: 4em;
+}
+
+.lh-50-50-text-left {
+  grid-column: 1/2;
+}
+
+.lh-50-50-title {
+  font-size:2em;
+}
+
+.lh-50-50-para {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.lh-50-50-text-right {
+  grid-column: 2/3;
+}
+
+.lh-50-50-image {
+  width:100%;
+  border-radius: 1em;
+}
+
+.lh-50-50-image img{
+  width:100%;
+}
+
+.lh-50-50-image-right {
+  grid-column: 2/3;
+}
+
+.lh-3col-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3em;
+  margin-bottom: 4em;
+}
+
+.col-image {
+  width:50%;
+  margin:0 auto;
+  display: block;
+}
+
+.lh-3col-title {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.15em;
+}
+
+.lh-3col-para{
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+.col-image img{
+  width:100%;
+}
+
+.col1-image-container {
+  grid-column: 1/2;
+  margin-bottom: 1em;
+}
+
+.col1-container {
+  grid-column: 1/2
+}
+
+.col2-image-container {
+  grid-column: 2/3;
+  margin-bottom: 1em;
+}
+
+.col2-container {
+  grid-column: 2/3;
+}
+
+.col3-image-container {
+  grid-column: 3/4;
+  margin-bottom: 1em;
+}
+
+.col3-container {
+  grid-column: 3/4;
+}
+
+.lh-periodic-table-para {
+  margin: 0 auto;
+  font-size: 1em;
+  text-align: center;
+  transition: 300ms;
+  width:80%;
+  height:3em;;
+}
+
+.lh-periodic-table-title {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.15em;
+}
+
+.periodic-table-button-container {
+    width:100%;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    margin: 0 auto;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.periodic-table-button {
+    height: 2.2em;
+    min-width:8em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-size:1.5em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:50em;
+    margin-left: 2em;
+    margin-right: 2em;
+    position: relative;
+    z-index: 100;
+}
+
+.learning-material-button-container {
+    width:100%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    bottom:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.learning-material-button {
+    height: 2.2em;
+    min-width:12em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-size:1.5em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:50em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width:60em){
+
+/* Elements Home Page */
+
+@keyframes AtomRotation1 {
+    0% {transform: translateY(-450px) translateX(-475px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(-450px) translateX(-475px) rotate(360deg);
+    transform-origin: center;}
+}
+@keyframes AtomRotation2 {
+    0% {transform: translateY(200px) translateX(450px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(200px) translateX(450px) rotate(360deg);
+    transform-origin: center;}
+}
+
+.element-container {
+  width:100%;
+  height:95vh;
+  margin:0;
+  padding:0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-side-container{
+  background-color:white;
+  grid-column:1/2;
+  display: block;
+  overflow:scroll;
+  overflow-x: hidden;
+  padding-top: 0em;
+}
+
+.left-side-content {
+  margin:0 auto;
+  width:80%;
+  height:100vh;
+  padding-top: 2em;
+  display: block;
+}
+
+.right-side-container {
+  grid-column:2/3;
+  overflow: hidden;
+}
+
+
+.element-page-title {
+  margin:0 auto;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+}
+
+.element-pronounce {
+  margin:0 auto;
+  text-align: center;
+  font-size:1.1em;
+  font-weight: 500;
+  padding:0;
+}
+
+.element-page-precent {
+  margin:0 auto;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+  font-size: 1.25em;
+}
+
+.element-page-gen-info {
+    width:100%;
+    margin:0 auto;
+    display: block;
+    margin-top: 2em;
+    color:#2A3A4E;
+}
+
+.gen-info-item {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.1em;
+  padding:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lh-container {
+  width:70%;
+}
+
+.lh-introduction {
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+.lh-intro-title {
+  font-size: 2em;
+  color:#5aaef2;
+}
+
+.lh-intro-para {
+  font-size:1.5em;
+}
+
+.lh-50-50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4em;
+  margin-bottom: 2em;
+}
+
+.lh-50-50-text-left {
+  grid-column: 1/3;
+}
+
+.lh-50-50-title {
+  font-size:2em;
+}
+
+.lh-50-50-para {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.lh-50-50-text-right {
+  grid-column: 1/3;
+}
+
+
+
+.lh-50-50-image {
+  width:100%;
+  border-radius: 1em;
+}
+
+.lh-50-50-image img{
+  width:100%;
+}
+
+.lh-50-50-image-60em {
+    grid-column: 1/3;
+    margin-bottom: 1em;
+}
+
+.lh-50-50-image-left {
+  grid-column: 1/3;
+  margin-bottom: 1em;
+}
+
+.lh-50-50-image-right {
+  grid-column: 1/3;
+  display: none;
+}
+
+.lh-3col-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3em;
+  margin-bottom: 4em;
+}
+
+.col-image {
+  width:50%;
+  margin:0 auto;
+  display: block;
+}
+
+.lh-3col-title {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.15em;
+}
+
+.lh-3col-para{
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+.col-image img{
+  width:100%;
+}
+
+.col1-image-container {
+  grid-column: 1/2;
+  margin-bottom: 1em;
+}
+
+.col1-container {
+  grid-column: 1/2;
+  margin-bottom: 2em;
+}
+
+.col2-image-container {
+  grid-column: 2/3;
+  margin-bottom: 1em;
+}
+
+.col2-container {
+  grid-column: 2/3;
+  margin-bottom: 2em;
+}
+
+.col3-image-container {
+  grid-column: 1/3;
+  width:100%;
+  margin:0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.col3-container {
+  grid-column: 1/3;
+  width:50%;
+  margin:0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.lh-periodic-table-para {
+  margin: 0 auto;
+  font-size: 1em;
+  text-align: center;
+  transition: 300ms;
+  width:80%;
+  height:4em;
+}
+
+.lh-periodic-table-title {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.15em;
+}
+
+.periodic-table-button-container {
+    width:100%;
+    padding-top: 0em;
+    padding-bottom: 4em;
+    margin: 0 auto;
+    bottom:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.periodic-table-button {
+    height: 2.5em;
+    min-width:8em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-size:1.25em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:50em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    z-index: 100;
+}
+
+.learning-material-button-container {
+    width:100%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    bottom:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.learning-material-button {
+    height: 2.5em;
+    min-width:12em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-size:1.25em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:50em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+
+
+}
+
+@media (max-width:50em){
+
+.navlogo {
+  display: none;
+}
+
+nav a {
+    transition:all ease-in-out 200ms;
+    display: block;
+    padding: 1em 6em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    width:100%;
+    max-width:1000px;
+    margin:0 auto
+}
+
+header {
+    padding:2em 0;
+    position: relative;
+    margin:0;
+    list-style: none;
+    background-color:white;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+header::after {
+    content:'';
+    clear:both;
+    display:block;
+}
+
+.navcontent{
+    position: absolute;
+    background:#E34B4B;
+    list-style: none;
+    top:100%;
+    right:0%;
+    width:100%;
+    height:0px;
+    overflow:hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav li {
+    display: block;
+    margin-left:0px;
+    padding:0px;
+    width:100%;
+}
+
+.nav-change {
+    padding:1.5em;
+    position: absolute;
+    right:1em;
+    top:0.4em;
+    cursor: pointer;
+}
+
+.hamburgericon,
+.hamburgericon::before,
+.hamburgericon::after{
+    content:'';
+    display:block;
+    background-color:#131D28;
+    height:3px;
+    width:1.5em;
+    border-radius:1em;
+    transition:all ease-in-out 500ms;
+}
+
+.hamburgericon::before{
+    transform: translateY(-7px);
+}
+
+.hamburgericon::after{
+    transform: translateY(4px);
+}
+
+.navcontent--open {
+    height:auto;
+}
+
+.open .hamburgericon::before {
+    opacity: 0;
+}
+
+.open .hamburgericon::after {
+    transform:translateY(-3px) rotate(-90deg)
+}
+
+.open .hamburgericon{
+    transform:rotate(45deg);
+}
+
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+
+.select-centre-text-container-mobile {
+    display: block;
+    margin:0 auto;
+    grid-column:1/3;
+    margin-top:2.5em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.element-select-centre{
+    width:100%;
+    margin:0;
+    padding:0;
+    bottom:0;
+}
+
+.element-select-blocks-1 {
+    grid-column:1/2;
+}
+
+.element-select-blocks-2 {
+    grid-column:2/3;
+}
+
+.element-select-centrepiece{
+    display: none;
+}
+
+.element {
+    max-width:16em;
+    margin: 0 auto;
+    border-radius: 1.5em;
+    text-align: center;
+    margin-top:4em;
+    margin-bottom: 4em;
+}
+
+/* Pseudo elements that create a responsive square */
+
+.element::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.element::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-top {
+    margin-top: 2.5em;
+}
+
+.select-chemical-symbol{
+    font-size:4em;
+    margin:0;
+    padding:0;
+}
+
+.select-element-name{
+    font-size:2em;
+    margin:0;
+    padding:0;
+}
+
+.select-atomic-number{
+    font-size:1.5em;
+    margin:0;
+    padding:0;
+    padding-top: 1em;
+}
+
+.select-atomic-mass{
+    font-size:1.5em;
+    margin:0;
+    padding:0;
+    margin-top:0.5em;
+    padding-bottom: 1em;}
+
+.select-person-model {
+    max-width:20em;
+    margin:0 auto;
+    display: block;
+}
+
+
+.element-select-container {
+    width:90%;
+    margin:0 auto;
+    padding:0;
+    background-color:white;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    bottom:0;
+}
+
+.element-select-centre{
+    width:100%;
+    display: block;
+    margin:0 auto;
+    padding:0;
+    bottom:0;
+}
+
+.select-centre-text-container {
+    margin:0 auto;
+    padding: 0;
+    display: block;
+    margin-top: 4em;
+}
+
+.select-title{
+    font-size: 2.5em;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.select-subtitle{
+    font-size: 1.25em;
+    width:80%;
+    padding-top: 0.5em;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.select-element-precent-text {
+    display: none;
+    margin:0;
+    padding: 0;
+}
+
+
+
+.mediasection {
+    background-color:white;
+    position:relative;
+    display: block;
+    padding:0;
+    margin: 0;
+    width:100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: 'Nunito', sans-serif;
+    color:#2A3A4E;
+}
+
+.mediaicon{
+    width:1.75em;
+    transition: 250ms;
+    margin: 0 2em;
+}
+
+.mediarow {
+    display:flex;
+    position: relative;
+    margin: 0 auto;
+    padding:0;
+    width:70%;
+    margin-top:0em;
+    justify-content: center;
+}
+
+.mediatitle {
+    width:70%;
+    font-size: 1.5em;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.iconlink{
+    margin-top: 1em;
+}
+
+
+h5 {
+    font-size:0.8em;
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    display: grid;
+    margin:0;
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+
+
+/* Elements Home Page */
+
+.splash-atom-2 {
+    width:45em;
+}
+
+.splash-atom-1 {
+    width:45em;
+}
+
+@keyframes AtomRotation1 {
+    0% {transform: translateY(-360px) translateX(-360px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(-360px) translateX(-360px) rotate(360deg);
+    transform-origin: center;}
+}
+
+@keyframes AtomRotation2 {
+    0% {transform: translateY(350px) translateX(425px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(350px) translateX(425px) rotate(360deg);
+    transform-origin: center;}
+}
+
+.element-container {
+  width:100%;
+  margin:0;
+  height:auto;
+  padding:0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-side-container{
+  background-color:white;
+  grid-column:1/3;
+  display: block;
+  padding-top: 0em;
+  overflow:hidden;
+  overflow-x: hidden;
+
+}
+
+.last-fact {
+  padding:0;
+}
+
+.left-side-content {
+  margin:0 auto;
+  width:80%;
+  padding-top: 2em;
+  display: block;
+  height:auto;
+}
+
+.right-side-container {
+  display: none;
+}
+
+.atom-model {
+display: none;
+}
+
+.atom-small {
+  display: block;
+  width:20em;
+  margin:0 auto;
+}
+
+.select-box-page {
+  display: none;
+}
+
+.p-atom-inner-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-middle-ring {
+  animation: p-atom-rotate 12s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-outer-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+@keyframes p-atom-rotate {
+
+0% {
+  transform: rotate(0deg);
+}
+
+100% {
+  transform: rotate(360deg);
+}
+
+}
+
+.element-page {
+  max-width: 10em;
+  margin: 0 auto;
+  border-radius: 1.5em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  transition: 300ms;
+}
+
+/* Pseudo elements that create a responsive square */
+
+.element-page::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.element-page::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-page-top-info {
+    font-family: 'Nunito', sans-serif;
+    margin:0 auto;
+    display: block;
+    padding:0;
+    color:#2A3A4E;
+}
+
+.element-page-title {
+  margin:0 auto;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+}
+
+.element-pronounce {
+  margin:0 auto;
+  text-align: center;
+  font-size:1.25em;
+  font-weight: 500;
+  padding:0;
+}
+
+.element-page-precent {
+  margin:0 auto;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+  font-size: 1.5em;
+}
+
+.element-page-gen-info {
+    width:100%;
+    margin:0 auto;
+    display: block;
+    margin-top: 4em;
+    color:#2A3A4E;
+}
+
+.gen-info-item {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.25em;
+  padding:0;
+}
+
+.gen-info-item-span{
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 500;
+  padding:0;
+}
+
+.element-page-para-info {
+  width:100%;
+  padding:0;
+  margin:0 auto;
+  display: block;
+  margin-top:4em;
+  font-family: 'Nunito', sans-serif;
+  display: block;
+  margin-bottom: 4em;
+  color:#2A3A4E;
+}
+
+.element-page-para-photo{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+
+.element-page-para-photo img{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+
+.element-para-title {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.5em;
+  padding:0;
+}
+
+.element-page-para-text {
+  margin-top:1em;
+  margin-bottom: 2em;
+}
+
+.element-para {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 500;
+  font-size: 1em;
+  padding:0;
+  margin-top:1em;
+}
+
+.element-page-facts {
+  width:100%;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4em;
+  margin-bottom: 4em;
+  color:#2A3A4E;
+}
+
+.element-page-fact-1 {
+  grid-column:1/2;
+  margin-bottom: 2em;
+}
+
+.element-page-fact-2 {
+  grid-column:2/3;
+  margin-bottom: 2em;
+}
+
+.element-page-fact-photo {
+  width:100%;
+  margin:0 auto;
+  display: block;
+}
+
+.element-page-fact-photo img {
+  width:5em;
+  margin:0 auto;
+  display: block;
+}
+
+.fact-title {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 2em;
+  padding:0;
+  margin-bottom: 1em;
+  grid-column: 1/3
+}
+
+.element-fact-para{
+font-family: 'Nunito', sans-serif;
+margin:0 auto;
+display: block;
+font-weight: 500;
+font-size: 1em;
+padding:0;
+margin-top:1em;}
+
+
+.element-fact-para{
+font-family: 'Nunito', sans-serif;
+margin:0 auto;
+display: block;
+font-weight: 500;
+font-size: 1.15em;
+padding:0;
+margin-top:1em;}
+
+.element-select-chemical-symbol{
+    font-family: 'Nunito', sans-serif;
+    font-weight:800;
+    color:white;
+    font-size:2.5em;
+    margin:0;
+    padding:0;
+}
+
+.element-select-element-name{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:white;
+    font-size:1.3em;
+    margin:0;
+    padding:0;
+}
+
+.element-select-atomic-number{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    color:white;
+    font-size:1em;
+    margin:0;
+    padding:0;
+    padding-top:1em;
+}
+
+.element-select-atomic-mass{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:white;
+    font-size:1em;
+    margin:0;
+    padding:0;
+    padding-top: 0.4em;
+    padding-bottom:1em;
+}
+
+.lh-container {
+  width:85%;
+}
+
+.lh-periodic-table-para {
+  margin: 0 auto;
+  font-size: 1em;
+  text-align: center;
+  transition: 300ms;
+  width:100%;
+  height:3em;
+}
+
+}
+
+@media (max-width:35em){
+
+.splash-button-container {
+    width:100%;
+    margin: 0 auto;
+    margin-top:5em;
+    display:block;
+}
+
+.splash-button {
+    margin:0 auto;
+    display: block;
+    margin-top: 2em;
+}
+
+.splash-brand{
+    max-width:30em;
+    padding-top: 6em;
+}
+
+.splash-button-container {
+    margin-top:8em;
+}
+
+.splash-slogan {
+    width:85%;
+    margin:0 auto;
+    margin-top:0.5em;
+    font-size:2em;
+}
+
+.splash-atom-2 {
+    width:45em;
+}
+
+.splash-atom-1 {
+    width:45em;
+}
+
+   @keyframes AtomRotation1 {
+    0% {transform: translateY(-360px) translateX(-360px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(-360px) translateX(-360px) rotate(360deg);
+    transform-origin: center;}
+}
+
+    @keyframes AtomRotation2 {
+    0% {transform: translateY(350px) translateX(200px) rotate(0deg);
+    transform-origin: center;}
+    100% {transform: translateY(350px) translateX(200px) rotate(360deg);
+    transform-origin: center;}
+}
+
+.splash-brand{
+    max-width:20em;
+}
+
+
+
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+/* Elements Selection Page */
+
+.select-centre-text-container-mobile {
+    display: block;
+    margin:0 auto;
+    grid-column:1/3;
+    margin-top:2.5em;
+}
+
+.element-select-centre{
+    width:100%;
+    margin:0;
+    padding:0;
+    bottom:0;
+}
+
+.element-select-blocks-1 {
+    grid-column:1/2;
+}
+
+.element-select-blocks-2 {
+    grid-column:1/2;
+}
+
+.element-select-centrepiece{
+    display: none;
+}
+
+.element {
+    max-width:18em;
+    margin: 0 auto;
+    border-radius: 1.5em;
+    text-align: center;
+    margin-top:4em;
+    margin-bottom: 4em;
+}
+
+/* Pseudo elements that create a responsive square */
+
+.element::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.element::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-top {
+    margin-top:0em;
+}
+
+.select-chemical-symbol{
+    font-size:4.75em;
+    margin:0;
+    padding:0;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+.select-element-name{
+    font-size:2.5em;
+    margin:0;
+    padding:0;
+}
+
+.select-atomic-number{
+    font-size:1.5em;
+    margin:0;
+    padding:0;
+    padding-top: 1em;
+}
+
+.select-atomic-mass{
+    font-size:1.5em;
+    margin:0;
+    padding:0;
+    margin-top: 0.5em;
+    padding-bottom: 1em;}
+
+.element-select-container {
+    width:85%;
+    margin:0 auto;
+    padding:0;
+    background-color:white;
+    display: grid;
+    grid-template-columns:1fr;
+    bottom:0;
+}
+
+.element-select-centre{
+    width:100%;
+    display: block;
+    margin:0 auto;
+    padding:0;
+    bottom:0;
+}
+
+.select-centre-text-container {
+    margin:0 auto;
+    padding: 0;
+    display: block;
+    margin-top: 4em;
+}
+
+.select-title{
+    font-size: 2.25em;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.select-subtitle{
+    font-size: 1.25em;
+    width:85%;
+    padding-top: 0.5em;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    margin-bottom:2em;
+}
+
+.select-element-precent-text {
+    display: none;
+    margin:0;
+    padding: 0;
+}
+
+.mediatitle {
+    width:80%;
+    font-size: 1.25em;
+}
+
+.iconlink{
+    margin-top: 1em;
+}
+
+
+h5 {
+    width:70%;
+    margin:0 auto;
+    margin-top: 1em;
+}
+
+.mediasection {
+    margin-top: 0em;
+}
+
+.element-container {
+  width:100%;
+  margin:0;
+  padding:0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-side-container{
+  background-color:white;
+  grid-column:1/3;
+  display: block;
+  padding-top: 0em;
+  overflow:auto;
+  overflow-x: hidden;
+
+}
+
+.left-side-content {
+  margin:0 auto;
+  width:80%;
+  padding-top: 2em;
+  display: block;
+}
+
+.right-side-container {
+  display: none;
+}
+
+.atom-model {
+  width:30em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.p-atom-inner-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-middle-ring {
+  animation: p-atom-rotate 12s infinite linear;
+  transform-origin:center;
+}
+
+.p-atom-outer-ring {
+  animation: p-atom-rotate 13s infinite linear;
+  transform-origin:center;
+}
+
+@keyframes p-atom-rotate {
+
+0% {
+  transform: rotate(0deg);
+}
+
+100% {
+  transform: rotate(360deg);
+}
+
+}
+
+.element-page {
+  max-width: 10em;
+  margin: 0 auto;
+  border-radius: 1.5em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  transition: 300ms;
+}
+
+/* Pseudo elements that create a responsive square */
+
+.element-page::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.element-page::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-page-top-info {
+    font-family: 'Nunito', sans-serif;
+    margin:0 auto;
+    display: block;
+    padding:0;
+    color:#2A3A4E;
+}
+
+.element-page-title {
+  margin:0 auto;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+}
+
+.element-pronounce {
+  margin:0 auto;
+  text-align: center;
+  font-size:1.15em;
+  font-weight: 500;
+  padding:0;
+}
+
+.element-page-precent {
+  margin:0 auto;
+  text-align: center;
+  font-weight: 800;
+  padding:0;
+  font-size: 1.35em;
+}
+
+.element-page-gen-info {
+    width:100%;
+    margin:0 auto;
+    display: block;
+    margin-top: 4em;
+    color:#2A3A4E;
+}
+
+.gen-info-item {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.1em;
+  padding:0;
+}
+
+.gen-info-item-span{
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 500;
+  padding:0;
+}
+
+.element-page-para-info {
+  width:100%;
+  padding:0;
+  margin:0 auto;
+  display: block;
+  margin-top:4em;
+  font-family: 'Nunito', sans-serif;
+  display: block;
+  margin-bottom: 4em;
+  color:#2A3A4E;
+}
+
+.element-page-para-photo{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+
+.element-page-para-photo img{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+
+.element-para-title {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 1.5em;
+  padding:0;
+}
+
+.element-page-para-text {
+  margin-top:1em;
+  margin-bottom: 2em;
+}
+
+.element-para {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 500;
+  font-size: 1em;
+  padding:0;
+  margin-top:1em;
+}
+
+.element-page-facts {
+  width:100%;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4em;
+  margin-bottom: 4em;
+  color:#2A3A4E;
+}
+
+.element-page-fact-1 {
+  grid-column:1/3;
+  margin-bottom: 2em;
+}
+
+.element-page-fact-2 {
+  grid-column:1/3;
+  margin-bottom: 2em;
+}
+
+.element-page-fact-photo {
+  width:100%;
+  margin:0 auto;
+  display: block;
+}
+
+.element-page-fact-photo img {
+  width:5em;
+  margin:0 auto;
+  display: block;
+}
+
+.fact-title {
+  font-family: 'Nunito', sans-serif;
+  margin:0 auto;
+  display: block;
+  font-weight: 800;
+  font-size: 2em;
+  padding:0;
+  margin-bottom: 1em;
+  grid-column: 1/3
+}
+
+.element-fact-para{
+font-family: 'Nunito', sans-serif;
+margin:0 auto;
+display: block;
+font-weight: 500;
+font-size: 1em;
+padding:0;
+margin-top:1em;}
+
+
+.element-fact-para{
+font-family: 'Nunito', sans-serif;
+margin:0 auto;
+display: block;
+font-weight: 500;
+font-size: 1.15em;
+padding:0;
+margin-top:1em;}
+
+.element-select-chemical-symbol{
+    font-family: 'Nunito', sans-serif;
+    font-weight:800;
+    color:white;
+    font-size:2.5em;
+    margin:0;
+    padding:0;
+}
+
+.element-select-element-name{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:white;
+    font-size:1.3em;
+    margin:0;
+    padding:0;
+}
+
+.element-select-atomic-number{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    color:white;
+    font-size:1em;
+    margin:0;
+    padding:0;
+    padding-top:1em;
+}
+
+.element-select-atomic-mass{
+    font-family: 'Nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    color:white;
+    font-size:1em;
+    margin:0;
+    padding:0;
+    padding-top: 0.4em;
+    padding-bottom:1em;
+}
+
+.lh-container {
+  width:90%;
+}
+
+.lh-introduction {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.lh-intro-title {
+  font-size: 2em;
+  color:#5aaef2;
+}
+
+.lh-intro-para {
+  font-size:1.25em;
+}
+
+.lh-50-50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4em;
+  margin-bottom: 2em;
+}
+
+.lh-50-50-text-left {
+  grid-column: 1/3;
+}
+
+.lh-50-50-title {
+  font-size:2em;
+}
+
+.lh-50-50-para {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.lh-50-50-text-right {
+  grid-column: 1/3;
+}
+
+
+
+.lh-50-50-image {
+  width:100%;
+  border-radius: 1em;
+}
+
+.lh-50-50-image img{
+  width:100%;
+}
+
+.lh-50-50-image-60em {
+    grid-column: 1/3;
+    margin-bottom: 1em;
+}
+
+.lh-50-50-image-left {
+  grid-column: 1/3;
+  margin-bottom: 1em;
+}
+
+.lh-50-50-image-right {
+  grid-column: 1/3;
+  display: none;
+}
+
+.lh-3col-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3em;
+  margin-bottom: 2em;
+}
+
+.col-image {
+  width:50%;
+  margin:0 auto;
+  display: block;
+}
+
+.lh-3col-title {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.15em;
+}
+
+.lh-3col-para{
+  margin: 0 auto;
+  font-size: 1em;
+  width:70%;
+}
+
+.col-image img{
+  width:100%;
+}
+
+.col1-image-container {
+  grid-column: 1/3;
+  margin-bottom: 1em;
+  width:80%;
+  margin:0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.col1-container {
+  grid-column: 1/3;
+  margin-bottom: 2em;
+}
+
+.col2-image-container {
+  grid-column: 1/3;
+  margin-bottom: 1em;
+  width:80%;
+  margin:0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.col2-container {
+  grid-column: 1/3;
+  margin-bottom: 2em;
+}
+
+.col3-image-container {
+  grid-column: 1/3;
+  width:80%;
+  margin:0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.col3-container {
+  grid-column: 1/3;
+  width:100%;
+  margin:0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.lh-periodic-table-para {
+  margin: 0 auto;
+  font-size: 1em;
+  text-align: center;
+  transition: 300ms;
+  width:100%;
+  height:4em;
+}
+
+.lh-periodic-table-title {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.15em;
+}
+
+.periodic-table-button-container {
+    width:100%;
+    padding-top: 0em;
+    padding-bottom: 4em;
+    margin: 0 auto;
+    bottom:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.periodic-table-button {
+    height: 2.5em;
+    min-width:8em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-size:1.25em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:50em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    z-index: 100;
+    width:100%;
+}
+
+.learning-material-button-container {
+    width:100%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    bottom:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.learning-material-button {
+    height: 2.5em;
+    min-width:12em;
+    background:#2A3A4E;
+    cursor: pointer;
+    border:none;
+    font-family: 'nunito', sans-serif;
+    font-weight:700;
+    letter-spacing: 1px;
+    font-size:1.25em;
+    color:white;
+    transform: scale(1);
+    transition: ease-in-out 200ms;
+    border-radius:50em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    z-index: 100;
+    width:100%;
+}
+
+
+}
