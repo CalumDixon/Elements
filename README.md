@@ -1,3 +1,3 @@
 # elements
 
-[Atomic Anatomy Website](https://calumdixon.github.io/elements/portfolio)
+[Atomic Anatomy Website](https://calumdixon.github.io/elements/index.html)
